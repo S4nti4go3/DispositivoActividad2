@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:backgroundTint="@color/cardview_dark_background"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:backgroundTint="#3700B3"
+        android:textColor="@color/cardview_light_background"
+        android:text="@string/Calculadora"
+        android:textSize="30dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:gravity="center"
+            android:textAlignment="center"
+            android:text="@string/sideone"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+
+        </TextView>
+
+        <EditText
+            android:hint="@string/lado1"
+            android:id="@+id/lado1"
+            android:layout_weight="3"
+            android:layout_width="0dp"
+            android:layout_height="50dp">
+        </EditText>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:gravity="center"
+            android:textAlignment="center"
+            android:text="@string/sidetwo"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+
+        </TextView>
+
+        <EditText
+            android:hint="@string/lado2"
+            android:id="@+id/lado2"
+            android:layout_weight="3"
+            android:layout_width="0dp"
+            android:layout_height="50dp">
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:gravity="center"
+            android:textAlignment="center"
+            android:text="@string/angulo"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+        </TextView>
+
+        <EditText
+            android:hint="@string/ang"
+            android:id="@+id/angulo"
+            android:layout_weight="3"
+            android:layout_width="0dp"
+            android:layout_height="50dp">
+        </EditText>
+    </LinearLayout>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rgroup">
+
+        <RadioButton
+            android:id="@+id/area"
+            android:text="@string/area"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </RadioButton>
+
+        <RadioButton
+            android:id="@+id/perimetro"
+            android:text="@string/perimetro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </RadioButton>
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/calcularButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/perimetro"
+        android:layout_marginTop="90dp"
+        android:backgroundTint="#0234C8"
+        android:layout_gravity="center_horizontal"
+        android:text="Calcular"
+        android:textColor="@color/cardview_light_background" />
+</LinearLayout>

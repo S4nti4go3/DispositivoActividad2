@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/resultadoTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Resultado: "
+        android:textSize="16dp"
+        android:layout_marginTop="200dp"/>
+
+    <TextView
+        android:id="@+id/senoTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Seno: "
+        android:textSize="16dp"/>
+
+    <TextView
+        android:id="@+id/cosenoTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Coseno: "
+        android:textSize="16dp"/>
+
+    <Button
+        android:id="@+id/volverMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:backgroundTint="#0234C8"
+        android:textColor="@color/cardview_light_background"
+        android:text="Volver a calcular" />
+
+</LinearLayout>

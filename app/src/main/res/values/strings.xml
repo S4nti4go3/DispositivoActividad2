@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Santiago_Aplicacion2</string>
+    <string name="Calculadora">Calculadora</string>
+    <string name="lado1">0</string>
+    <string name="lado2">0</string>
+    <string name="sideone">Lado 1</string>
+    <string name="sidetwo">Lado 2</string>
+    <string name="area">Área</string>
+    <string name="perimetro">Perímetro</string>
+    <string name="angulo">Ángulo</string>
+    <string name="ang">0</string>
+</resources>
